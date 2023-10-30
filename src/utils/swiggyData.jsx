@@ -8279,4 +8279,7 @@ const resObj = // 20231030205754
   "csrfToken": "rNvPfdEMNkYf-EDLUsnGGjcv0cS1K7T3zCJ3TT0Y"
 }
 
+
+export const resData = resObj?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+
 export default resObj;

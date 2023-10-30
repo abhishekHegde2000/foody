@@ -14,7 +14,7 @@ const ResCard = ({resData}) => {
 
     
   return (
-    <div className=' border m-2 p-2 border-black inline-block'>
+    <div className=' border m-2 p-2 border-black inline-block w-40 bg-gray-100'>
         <img className= "w-40 h-30" src={basePath + cloudinaryImageId} alt="image not available" />
         <div>
             <h1>{name}</h1>

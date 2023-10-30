@@ -2,6 +2,7 @@
 import './App.css'
 import Body from './Components/Body'
 import Header from './Components/Header'
+import ResContainer from './Components/ResContainer'
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Body/>
+      <ResContainer />
     </div>
   )
 }
