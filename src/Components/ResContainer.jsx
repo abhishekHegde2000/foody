@@ -5,16 +5,20 @@ import resObj from '../utils/swiggyData'
 
 
 const resData = resObj?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-console.log(resData)
+
 
 const ResContainer = () => {
   return (
     <div className='flex flex-wrap justify-between'>
-        <ResCard resName = {resData[4].info.name}
-        location = "bengaluru" 
-        star = "5" 
-        cost = {100} />
 
+        <ResCard resData={resData[5]}/>
+        <ResCard resData={resData[1]}/>
+        <ResCard resData={resData[0]}/>
+        <ResCard resData={resData[4]}/>
+        <ResCard resData={resData[5]}/>
+        <ResCard resData={resData[1]}/>
+        <ResCard resData={resData[0]}/>
+        <ResCard resData={resData[4]}/>
         
     </div>
   )
