@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { LOGO_URL } from '../utils/constants'
 
 const Header = () => {
+
+    const [btnName, setBtnName] = useState('Login')
+
+
   return (
     <div className='flex justify-between bg-red-200 border border-black'>
         <img className='w-12 h-12 ml-4 m-4' src={LOGO_URL} alt="food logo" />
@@ -11,6 +15,17 @@ const Header = () => {
                 <li>Home</li>
                 <li>Contact</li>
                 <li>Cart</li>
+                <button 
+                onClick={ 
+                    ()=> {
+                        if (btnName === 'Login') {
+                            setBtnName('Logout')
+                        } else {
+                            setBtnName('Login')
+                        }
+                    }
+                }
+                className='border border-black rounded-xl p-2'>{btnName}</button>
             </ul>
         </div>
 
